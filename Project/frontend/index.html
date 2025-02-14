@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DropFile - Sube y gestiona tus archivos</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>File to QR Code Converter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="min-h-screen flex flex-col bg-gradient-to-b from-blue-500 to-purple-600 text-white">
-    <header class="custom-header">
-        <nav class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold">DropFile</h1>
-            <a href="#" id="dashboardLink" class="hover:underline custom-link">Dashboard</a>
-        </nav>
-    </header>
-
-    <main class="flex-grow flex justify-center items-center p-8">
-        <div class="container mx-auto max-w-2xl text-center">
-            <h2 class="text-4xl font-bold mb-2">Bienvenido a DropFile</h2>
-            <p class="text-xl mb-8">Suelta tus archivos y nosotros los procesamos</p>
-            <div id="drop-zone" class="custom-drop-zone p-8 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer transition-colors">
-                <p>Arrastra y suelta algunos archivos aquí, o haz clic para seleccionar archivos</p>
-                <input type="file" id="fileInput" multiple class="hidden">
-            </div>
-            <div id="file-list" class="custom-file-list mt-8 bg-white text-gray-800 rounded-lg p-4 hidden">
-                <h3 class="text-xl font-semibold mb-4">Archivos cargados:</h3>
-                <ul id="uploaded-files" class="space-y-2"></ul>
-            </div>
+<body>
+    <div class="container">
+        <h1>File to QR Code Converter</h1>
+        <div id="drop-area">
+            <p>Drag and drop a file here or click to select</p>
+            <input type="file" id="fileElem" accept="*/*" onchange="handleFiles(this.files)">
+            <label class="button" for="fileElem">Select a file</label>
         </div>
-    </main>
-
-    <footer class="custom-footer">
-        <p>© 2023 DropFile. Todos los derechos reservados.</p>
-    </footer>
-
+        <div id="qr-container">
+            <img id="qr-code" src="/placeholder.svg" alt="QR Code" style="display: none;">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

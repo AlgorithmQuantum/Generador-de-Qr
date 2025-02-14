@@ -1,53 +1,53 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.custom-header {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 1rem;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
   }
   
-  .custom-link {
-    transition: color 0.3s ease;
+  .container {
+    text-align: center;
   }
   
-  .custom-link:hover {
-    color: #ffd700; /* Color dorado al pasar el mouse */
+  #drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
   }
   
-  .custom-drop-zone {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  #drop-area.highlight {
+    border-color: #000;
   }
   
-  .custom-drop-zone:hover {
-    transform: translateY(-2px);
-    transition: transform 0.3s ease;
+  #fileElem {
+    display: none;
   }
   
-  .custom-file-list {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .custom-footer {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-  }
-  
-  /* Estilo personalizado para los botones */
-  .custom-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+  .button {
+    display: inline-block;
+    padding: 10px;
+    background: #ccc;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    border: 1px solid #ccc;
   }
   
-  .custom-button:hover {
-    background-color: #2980b9;
-    transform: scale(1.05);
+  .button:hover {
+    background: #ddd;
+  }
+  
+  #qr-container {
+    margin-top: 20px;
+  }
+  
+  #qr-code {
+    max-width: 100%;
+    height: auto;
   }
   
   
