@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "build:css": "tailwindcss build ./app/global.css -o ./dist/global.css",
+    "build:css": "tailwindcss build ./app/global.css -o ./dist/global.css && tailwindcss build ./styles.css -o ./dist/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "next build",
     "start": "next start"
