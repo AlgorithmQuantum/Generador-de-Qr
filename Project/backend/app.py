@@ -1,4 +1,3 @@
-# filepath: /c:/Users/angel/Desktop/Mali/Proyecto/Backend/app.py
 from flask import Flask, request, send_from_directory, jsonify, redirect, url_for
 from werkzeug.utils import secure_filename
 import os

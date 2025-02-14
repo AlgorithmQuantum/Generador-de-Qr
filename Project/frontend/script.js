@@ -35,7 +35,7 @@ function handleFiles(files) {
 }
 
 function uploadFile(file) {
-  const url = "http://your-flask-backend-url/upload" // Replace with your actual backend URL
+  const url = "https://your-vercel-app.vercel.app/api/upload" // Reemplaza con la URL real de tu backend
   const formData = new FormData()
 
   formData.append("file", file)
@@ -59,9 +59,8 @@ function uploadFile(file) {
     })
 }
 
-function displayQRCode(qrCodeBase64) {
+function displayQRCode(qrCodeUrl) {
   const qrCode = document.getElementById("qr-code")
-  qrCode.src = "data:image/png;base64," + qrCodeBase64
+  qrCode.src = qrCodeUrl
   qrCode.style.display = "block"
 }
-
