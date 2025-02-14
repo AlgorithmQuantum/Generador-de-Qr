@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import "./globals.css"
-import "./styles.css"
+import "../dist/global.css";
+import "../dist/styles.css";
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
