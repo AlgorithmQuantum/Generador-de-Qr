@@ -1,0 +1,50 @@
+/* Estilos personalizados que complementan Tailwind */
+
+.custom-header {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+  }
+  
+  .custom-link {
+    transition: color 0.3s ease;
+  }
+  
+  .custom-link:hover {
+    color: #ffd700; /* Color dorado al pasar el mouse */
+  }
+  
+  .custom-drop-zone {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-drop-zone:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+  }
+  
+  .custom-file-list {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+  }
+  
+  /* Estilo personalizado para los botones */
+  .custom-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .custom-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  
