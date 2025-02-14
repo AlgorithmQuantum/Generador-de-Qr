@@ -1,0 +1,4 @@
+// filepath: /c:/Users/angel/Desktop/Mali/Proyecto/Backend/requirements.txt
+Flask
+qrcode
+werkzeug
